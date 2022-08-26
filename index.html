@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Shades Of Colour</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" onclick="homepage()">Home</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="btn btn-success" onclick="excontactus()">Contact Us</button>
+                        <button class="btn btn-success" type="submit" onclick="exaboutus()">About Us</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <div id="home" class="container">
+
+        <h1 id="heading">Shades Of Colour</h1>
+        <div id="itemImages">
+            <img class="images" src="https://i.pinimg.com/550x/cd/06/ac/cd06ac0869e96d6baf6ab9c07e52896c.jpg">
+
+            <img class="images"
+                src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVkJTIwc2hlZXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+
+            <img class="images"
+                src="https://fashioncluba.com/wp-content/uploads/2016/10/khaadi-latest-winter-collection-2016-17-khaddar-dresses-for-women-1.jpg">
+
+            <img class="images"
+                src="data:image/jpeg;base64,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">
+
+            <img class="images"
+                src="https://media.istockphoto.com/photos/color-women-bag-display-on-white-background-picture-id1159213603?k=20&m=1159213603&s=612x612&w=0&h=T8LsiuyBRkNfIuiwx2MCG1VRXKrkbgshTv2IX_310K8=">
+        </div>
+
+        <div id="itemsandDescription">
+            <h1 id="heading2">WE DEAL WITH BELOW MENTIONED ITEMS</h1>
+            <ul>
+                <div>
+                    <h3>WOMEN COLLECTION</h3>
+                    <p>KURTI, SUIT PC, THAAN, PLAZO, PANT, SAREE, BAGS</p>
+                </div>
+
+                <div>
+                    <h3>HOME DECOR</h3>
+                    <p>BED SHEET, BLANKET, DOHAR ETC</p>
+                </div>
+
+                <div>
+                    <h3>WINTER COLLECTION(LADIES & GENTS)</h3>
+                    <p>WOOLEN GARMENT, SHAWLS, STOLE, JACKET</p>
+                </div>
+
+                <div>
+                    <h3>SKIN CARE</h3>
+                    <p>ORIFLAME PRODUCTS</p>
+                </div>
+
+                <div id="note">
+                    <p>NOTE:- EMI AVAILABLE (3 MONTHS)</p>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="aboutus" class="container" style="display:none">
+        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, modi! Dolore tempore incidunt
+            perspiciatis consequatur dolor, provident modi accusantium. Deserunt quos dicta dolores voluptatum ducimus
+            eligendi rem consequuntur ipsum corrupti laborum magnam laboriosam dolorum quibusdam, nesciunt omnis magni
+            ea asperiores pariatur explicabo aliquam mollitia odit neque velit autem! Voluptates veritatis odio aut.
+            Dignissimos aspernatur unde, saepe quas aut, voluptatum earum dolorum ea iste nulla ipsam veritatis
+            laboriosam sed ipsa illum incidunt aliquam consequuntur quasi vitae iusto minima ad placeat
+            perferendis adipisci. Saepe quidem et facere incidunt sed itaque molestiae nulla cupiditate aliquam dolorum.
+            Labore possimus quae numquam optio placeat reprehenderit sint beatae voluptas vero soluta non repellat magni
+            ab quaerat cupiditate perferendis, cum excepturi repellendus ipsam itaque iste nobis quia quasi fugit.
+            Dolorum, debitis sit vero cum veniam vitae ipsam quia sunt voluptatibus, accusamus consectetur pariatur illo
+            possimus. Dicta excepturi commodi enim, necessitatibus nesciunt tenetur quaerat. Atque ratione alias, amet
+            quasi exercitationem molestiae iusto cupiditate facilis quo deserunt quaerat aliquam esse error ad ullam
+            corporis laudantium eveniet dolores, necessitatibus,electus excepturi error est. Rem
+            veniam molestias dolorum?</h3>
+    </div>
+
+
+
+
+
+
+
+    <div id="contactus" class="container">
+        <p>Contact Number:- 7029575307 / 7602336673 / 82050749691</p>
+        <p>Email:- Naazish123@gmail.com</p><br>
+        <p>ADDRESS:- BLOCK C3 5F (SUGAM PARK), ASANSOL- 713302</p>
+
+    </div>
+
+
+
+</body>
+
+<style>
+    #aboutus {
+        padding: 60px;
+        font-size: 18px;
+        font-family: 'Aladin';
+    }
+
+    #contactus {
+        padding: 60px;
+        font-size: 40px;
+        margin: auto;
+        text-align: center;
+        margin-top: 40px;
+        font-family: 'Aladin';
+    }
+
+    #itemsandDescription {
+        margin: auto;
+        text-align: center;
+        padding: 50px;
+
+    }
+
+    body {
+        background-image: url('https://free4kwallpapers.com/uploads/originals/2015/07/18/pink-background-designs.jpg');
+    }
+
+    .images {
+        border: 2px solid white;
+        width: 420px;
+        height: 320px;
+        margin: auto;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    #heading {
+        font-family: 'Akronim';
+        font-size: 122px;
+        color: rgb(105, 0, 0);
+        text-align: center;
+    }
+
+    #heading2 {
+        font-size: 42px;
+        margin: 70px;
+    }
+
+    #note {
+        margin: 70px;
+        border: 2px solid black;
+        border-radius: 5px;
+        background-color: rgb(255, 138, 138);
+        font-size: 35px;
+    }
+
+    
+    @media only screen and (max-width: 600px) {
+        .images {
+            border: 2px solid black;
+            width: 350px;
+            height: 250px;
+            margin: auto;
+            padding: 30px;
+
+        }
+
+        #heading {
+            font-family: 'Akronim';
+            font-size: 62px;
+            color: rgb(105, 0, 0);
+            text-align: center;
+        }
+
+        #heading2 {
+            font-size: 25px;
+            margin: 30px;
+            text-align: left;
+        }
+
+        #itemsandDescription {
+            margin: auto;
+            text-align: left;
+            padding: 0px;
+            font-size: 15px;
+
+        }
+
+        #note {
+            margin: auto;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: rgb(255, 138, 138);
+            font-size: 20px;
+            width:320px;
+        }
+
+        #contactus {
+            padding: 20px;
+            font-size: 20px;
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Aladin';
+        }
+    }
+</style>
+
+</html>
+
+<script>
+    let contactUs = document.getElementById('contactus');
+    let aboutUs = document.getElementById('aboutus');
+    let homePage = document.getElementById('home');
+
+    const excontactus = () => {
+
+        contactUs.style.display = 'block';
+        aboutUs.style.display = 'none';
+        home.style.display = 'none';
+
+    }
+
+    const exaboutus = () => {
+
+        aboutUs.style.display = 'block';
+        contactUs.style.display = 'none';
+        home.style.display = 'none';
+
+    }
+
+    const homepage = () => {
+
+        home.style.display = 'block';
+        contactUs.style.display = 'block';
+        aboutUs.style.display = 'none';
+
+    }
+</script>
