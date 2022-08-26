@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Akronim|Audiowide' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
 </head>
 
@@ -65,25 +65,26 @@
         <div id="itemsandDescription">
             <h1 id="heading2">WE DEAL WITH BELOW MENTIONED ITEMS</h1>
             <ul>
-                <div>
+                <li>
                     <h3>WOMEN COLLECTION</h3>
                     <p>KURTI, SUIT PC, THAAN, PLAZO, PANT, SAREE, BAGS</p>
-                </div>
+                </li>
+                
 
-                <div>
+                <li>
                     <h3>HOME DECOR</h3>
                     <p>BED SHEET, BLANKET, DOHAR ETC</p>
-                </div>
+                </li>
 
-                <div>
+                <li>
                     <h3>WINTER COLLECTION(LADIES & GENTS)</h3>
                     <p>WOOLEN GARMENT, SHAWLS, STOLE, JACKET</p>
-                </div>
+                </li>
 
-                <div>
+                <li>
                     <h3>SKIN CARE</h3>
-                    <p>ORIFLAME PRODUCTS</p>
-                </div>
+                    <p>ORIFLAME PRODUCT</p>
+                </li>
 
                 <div id="note">
                     <p>NOTE:- EMI AVAILABLE (3 MONTHS)</p>
@@ -150,9 +151,13 @@
 
     #itemsandDescription {
         margin: auto;
-        text-align: center;
-        padding: 50px;
-
+        text-align: left;
+        padding: 15px;
+        border:2px solid white;
+        border-radius:10px;
+        background-color: rgb(255, 98, 124,0.3);
+        margin-top:40px;
+        margin-bottom:40px;
     }
 
     body {
@@ -173,11 +178,13 @@
         font-size: 122px;
         color: rgb(105, 0, 0);
         text-align: center;
+        margin:50px;
     }
 
     #heading2 {
         font-size: 42px;
         margin: 70px;
+        font-family:Audiowide;
     }
 
     #note {
@@ -186,7 +193,11 @@
         border-radius: 5px;
         background-color: rgb(255, 138, 138);
         font-size: 35px;
+        width:610px;
+        padding:10px;
     }
+
+    
 
     
     @media only screen and (max-width: 600px) {
@@ -225,8 +236,9 @@
             border: 2px solid black;
             border-radius: 5px;
             background-color: rgb(255, 138, 138);
-            font-size: 20px;
-            width:320px;
+            font-size: 15px;
+            width:310px;
+            margin-right:5px;
         }
 
         #contactus {
@@ -238,6 +250,17 @@
             font-family: 'Aladin';
         }
     }
+    @media only screen and (max-width: 991px) and (min-width: 601px) {
+        #note {
+            
+            border: 1px solid yellow;
+            background-color: rgb(255, 138, 138);
+            font-size: 25px;
+            width:310px;
+            
+        }
+    }
+
 </style>
 
 </html>
